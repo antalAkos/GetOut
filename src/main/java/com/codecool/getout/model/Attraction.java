@@ -14,10 +14,13 @@ public class Attraction {
     private String description;
     private Category category;
     private String location;
-    @CollectionTable(name = "pisctures")
+    @CollectionTable(name = "pictures")
     @ElementCollection
     private List<String> pictures;
 
+
+    public Attraction() {
+    }
 
     public Attraction(String name, String description, Category category, String location, List<String> pictures) {
         this.name = name;
