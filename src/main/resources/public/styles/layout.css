@@ -12,6 +12,16 @@ File: Layout CSS
 @import url("custom.flexslider.css");
 @import url("framework.css");
 
+iframe {
+	border: 0;
+	width: 200%;
+	height: 500px;
+}
+
+#attraction {
+	width: fit-content;
+	height: 200px;
+}
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row1, .row1 a{}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/jquery.backtotop.js"></script>
+    <script src="/scripts/jquery.mobilemenu.js"></script>
+    <script src="/scripts/jquery.flexslider-min.js"></script>
+    <script src="/scripts/custom.js"></script>
+    <title>GetOut</title>
+</head>
+<body>
+<div class="content three_quarter">
+    <h2>Write A Comment</h2>
+    <form  method="post">
+        <div class="one_third first">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" name="name" id="name" value="" size="22"/>
+        </div>
+        <div class="one_third">
+            <label for="email">Mail <span>*</span></label>
+            <input type="text" name="email" id="email" value="" size="22"/>
+        </div>
+        <div class="one_third">
+            <label for="url">Website</label>
+            <input type="text" name="url" id="url" value="" size="22"/>
+        </div>
+        <div class="block clear">
+            <label for="comment">Your Comment</label>
+            <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+        </div>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+            function myMap() {
+                var mapProp= {
+                    center:new google.maps.LatLng(51.508742,-0.120850),
+                    zoom:5,
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=myMap"></script>
+
+
+        <div class="one_third" >
+            <button name="submit" href="/attraction/new/save" value="Submit Form">Save</button>
+            &nbsp;
+            <input name="reset" type="reset" value="Reset Form"/>
+        </div>
+    </form>
+
+
+
+
+
+
+</div>
+</body>
+</html>

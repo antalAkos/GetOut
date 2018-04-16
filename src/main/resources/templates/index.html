@@ -150,7 +150,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <h2 class="heading">Fusce quis feugiat urna dui leo egestas augue</h2>
             <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet pulvinar dapibus.</p>
         </div>
-        <div class="one_quarter"><a class="btn" href="#">Get it now <span class="fa fa-arrow-right"></span></a></div>
+        <div class="one_quarter"><a class="btn new" href="/attraction/new">Add new place<span class="fa fa-arrow-right"></span></a></div>
         <!-- ################################################################################################ -->
     </section>
 </div>
@@ -163,7 +163,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <ul class="nospace group" >
 
             <li th:each="attraction:${attractions}">
-                <figure><a class="overlay" href="#"><img th:src="${attraction.getPictures()[0]}" alt=""/></a>
+                <figure><a class="overlay" href="#"><img id="attraction" th:src="${attraction.getPictures()[0]}" alt=""/></a>
                     <figcaption class="inspace-30 center">
                         <p class="bold uppercase" th:text="${attraction.getName()}">Ante lectus laoreet</p>
                         <p><a href="#">View Here &raquo;</a></p>
@@ -208,7 +208,7 @@ Licence URI: http://www.os-templates.com/template-terms
             </div>
             <div class="one_half">
                 <iframe
-                        frameborder="0" style="border:0"
+                        frameborder="0"
                         th:src="${map}" allowfullscreen="allowfullscreen">
                 </iframe>
             </div>

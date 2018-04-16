@@ -12,7 +12,8 @@ public class Attraction {
     private int ID;
     private String name;
     private String description;
-    private Category category;
+    @ManyToMany
+    private List<Category> categories;
     private String location;
     @CollectionTable(name = "pictures")
     @ElementCollection
@@ -22,12 +23,24 @@ public class Attraction {
     public Attraction() {
     }
 
-    public Attraction(String name, String description, Category category, String location, List<String> pictures) {
+    public Attraction(String name, String description, List<Category> categories, String location, List<String> pictures) {
         this.name = name;
         this.description = description;
-        this.category = category;
+        this.categories = categories;
         this.location = location;
         this.pictures = pictures;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 
     public String getName() {
@@ -46,12 +59,12 @@ public class Attraction {
         this.description = description;
     }
 
-    public Category getCategory() {
-        return category;
+    public List<Category> getCategory() {
+        return categories;
     }
 
     public void setCategory(Category category) {
-        this.category = category;
+        this.categories.add(category);
     }
 
     public String getLocation() {
