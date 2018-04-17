@@ -8,7 +8,7 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
     private String name;
     @ManyToMany
     private List<Attraction> attractions;
@@ -25,7 +25,7 @@ public class Category {
         this.name = name;
     }
 
-    public int getID() {
+    public Long getID() {
         return ID;
     }
 

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -20,8 +21,7 @@ public class RenderController {
 
     @RequestMapping(value ="/", method = RequestMethod.GET)
     public String indexPage(Model model) {
-        model.addAttribute("attractions", attractionRepository.findAll());
-        model.addAttribute("map", "https://www.google.com/maps/embed/v1/place?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&q=Hungary");
+        model.addAttribute("attractions", attractionRepository.findAll().subList(0, 5));
         return "index";
     }
 
@@ -34,5 +34,11 @@ public class RenderController {
     @RequestMapping(value = "/attraction/new/save", method = RequestMethod.POST)
     public void saveNewAttraction(@ModelAttribute Attraction attraction, Model model) {
 
+    }
+
+    @RequestMapping(value = "/attraction/{id}", method = RequestMethod.GET)
+    public String attractionPage(Model model, @PathVariable Long id) {
+        model.addAttribute("attraction", attractionRepository.findOne(id));
+        return "index";
     }
 }

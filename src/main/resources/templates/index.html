@@ -16,6 +16,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <script src="scripts/jquery.backtotop.js"></script>
     <script src="scripts/jquery.mobilemenu.js"></script>
     <script src="scripts/jquery.flexslider-min.js"></script>
+    <script src="scripts/custom.js"></script>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -166,7 +167,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <figure><a class="overlay" href="#"><img id="attraction" th:src="${attraction.getPictures()[0]}" alt=""/></a>
                     <figcaption class="inspace-30 center">
                         <p class="bold uppercase" th:text="${attraction.getName()}">Ante lectus laoreet</p>
-                        <p><a href="#">View Here &raquo;</a></p>
+                        <p><a th:href="@{'/attraction/' + ${attraction.getID()}}">View Here &raquo;</a></p>
                     </figcaption>
                 </figure>
             </li>
@@ -206,13 +207,16 @@ Licence URI: http://www.os-templates.com/template-terms
                     </li>
                 </ul>
             </div>
-            <div class="one_half">
-                <iframe
-                        frameborder="0"
-                        th:src="${map}" allowfullscreen="allowfullscreen">
-                </iframe>
+                <div class="one_half"><a href="#"><img src="http://kb4images.com/images/picture/37509081-picture.jpg" alt=""/></a></div>
+
+
             </div>
-        </div>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=myMap"></script>
+
+
+
         <!-- ################################################################################################ -->
         <!-- / main body -->
         <div class="clear"></div>

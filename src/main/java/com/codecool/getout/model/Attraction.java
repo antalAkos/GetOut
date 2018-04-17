@@ -9,7 +9,7 @@ public class Attraction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
     private String name;
     private String description;
     @ManyToMany
@@ -31,7 +31,7 @@ public class Attraction {
         this.pictures = pictures;
     }
 
-    public int getID() {
+    public Long getID() {
         return ID;
     }
 
