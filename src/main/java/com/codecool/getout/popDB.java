@@ -51,7 +51,10 @@ public class popDB {
                 JSONObject jsonObject = (JSONObject) obj;
 
                 List<Category> categories = Arrays.asList(jsonObject.get("tags")).stream().map(c -> new Category(c.toString())).map(c-> categoryRepository.save(c)).collect(Collectors.toList());
-                Attraction attraction = new Attraction(jsonObject.get("name_of_attraction").toString(), "", categories, jsonObject.get("address").toString(), pictureList);
+                Attraction attraction = new Attraction(jsonObject.get("name_of_attraction").toString(), "this is description", categories, jsonObject.get("address").toString(), pictureList);
+                /*for (Category category:categories) {
+                    categoryRepository.
+                }*/
                 attractionRepository.save(attraction);
             }
 

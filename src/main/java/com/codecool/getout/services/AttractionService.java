@@ -16,4 +16,8 @@ public class AttractionService {
     public List<Attraction> findAll() {
         return attractionRepository.findAll();
     }
+
+    public Attraction findOne(Long id) {
+        return attractionRepository.findOne(id);
+    }
 }

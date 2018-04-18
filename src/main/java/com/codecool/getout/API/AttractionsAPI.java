@@ -7,6 +7,7 @@ import org.json.simple.JSONObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -24,7 +25,11 @@ public class AttractionsAPI {
 
 
     @GetMapping("/api/attractions")
-    public String getAllCustomers() {
+    public String getAllAttractions() {
         return new Gson().toJson(attractionService.findAll());
     }
+
+
+    @GetMapping("/api/attraction/{id}")
+    public String getOneAttraction(@PathVariable Long id) {return new Gson().toJson(attractionService.findOne(id));}
 }

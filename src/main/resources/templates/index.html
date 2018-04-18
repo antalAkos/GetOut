@@ -167,7 +167,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <figure><a class="overlay" href="#"><img id="attraction" th:src="${attraction.getPictures()[0]}" alt=""/></a>
                     <figcaption class="inspace-30 center">
                         <p class="bold uppercase" th:text="${attraction.getName()}">Ante lectus laoreet</p>
-                        <p><a th:href="@{'/attraction/' + ${attraction.getID()}}">View Here &raquo;</a></p>
+                        <p class="attractionLink" th:id="${attraction.getID()}" >View Here &raquo;</p>
                     </figcaption>
                 </figure>
             </li>
@@ -179,18 +179,18 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
+<div class="wrapper row3"  >
     <main class="container nospace clear">
         <!-- main body -->
         <!-- ################################################################################################ -->
-        <div class="group">
+        <div class="group" id="attractionInfo" >
             <div class="one_half first paditout">
-                <h2 class="heading uppercase btmspace-50">Integer varius enim id augue faucibus mattis</h2>
+                <h2 class="heading uppercase btmspace-50" id="title">Integer varius enim id augue faucibus mattis</h2>
                 <ul class="nospace group">
                     <li class="btmspace-30">
                         <article class="service largeicon"><i class="icon nobg circle fa fa-ra"></i>
-                            <h6 class="heading"><a href="#">Vestibulum nibh enim</a></h6>
-                            <p>Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet.</p>
+                            <h6 class="heading" id="categories"><a href="#">Vestibulum nibh enim</a></h6>
+                            <p id="description">Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet.</p>
                         </article>
                     </li>
                     <li class="btmspace-30">
@@ -207,7 +207,7 @@ Licence URI: http://www.os-templates.com/template-terms
                     </li>
                 </ul>
             </div>
-                <div class="one_half"><a href="#"><img src="http://kb4images.com/images/picture/37509081-picture.jpg" alt=""/></a></div>
+                <div class="one_half"><a href="#"><img id="picture" src="http://kb4images.com/images/picture/37509081-picture.jpg" alt=""/></a></div>
 
 
             </div>
