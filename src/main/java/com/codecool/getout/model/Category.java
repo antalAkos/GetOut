@@ -10,6 +10,11 @@ import java.util.Set;
 
 @Entity
 @Table(name = "categories")
+@NamedQueries({
+        @NamedQuery(name = "Category.findByName",
+                query = "select c from Category c where c.name = :name"
+        )
+})
 public class Category {
 
     @Id

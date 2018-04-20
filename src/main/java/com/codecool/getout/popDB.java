@@ -59,6 +59,9 @@ public class popDB {
                         Category current = new Category(category);
                         categories.add(current);
                         categoryRepository.save(current);
+                    } else {
+                        Category current = categoryRepository.findByName(category);
+                        categories.add(current);
                     }
 
                 }
