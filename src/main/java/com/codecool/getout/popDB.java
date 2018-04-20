@@ -4,6 +4,8 @@ import com.codecool.getout.model.Attraction;
 import com.codecool.getout.model.Category;
 import com.codecool.getout.repository.AttractionRepository;
 import com.codecool.getout.repository.CategoryRepository;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -44,18 +46,28 @@ public class popDB {
                     .parse(new FileReader(new File("src/main/java/com/codecool/getout/attractions.json").getAbsolutePath()));
 
             JSONArray jsonArray= (JSONArray) object;
-
-
+            List<String> checkCategory = new ArrayList<>();
 
             for (Object obj:jsonArray){
                 JSONObject jsonObject = (JSONObject) obj;
+                JSONArray tagsArray = (JSONArray) jsonObject.get("tags");
+                ArrayList<String> categoryStrings = jsonToArray(tagsArray);
+                List<Category> categories = new ArrayList<>();
+                for (String category: categoryStrings) {
+                    if (!checkCategory.contains(category)) {
+                        checkCategory.add(category);
+                        Category current = new Category(category);
+                        categories.add(current);
+                        categoryRepository.save(current);
+                    }
 
-                List<Category> categories = Arrays.asList(jsonObject.get("tags")).stream().map(c -> new Category(c.toString())).map(c-> categoryRepository.save(c)).collect(Collectors.toList());
+                }
+                //List<Category> categories = categoryStrings.stream().map(c -> new Category(c)).map(c -> categoryRepository.save(c)).collect(Collectors.toList());
                 Attraction attraction = new Attraction(jsonObject.get("name_of_attraction").toString(), "this is description", categories, jsonObject.get("address").toString(), pictureList);
-                /*for (Category category:categories) {
-                    categoryRepository.
-                }*/
                 attractionRepository.save(attraction);
+                categories.stream().map(c -> c.getAttractions().add(attraction));
+                categories.stream().map(c -> categoryRepository.saveAndFlush(c));
+
             }
 
         }
@@ -67,5 +79,13 @@ public class popDB {
 
     }
 
+
+    ArrayList<String> jsonToArray(JSONArray jsonArray) {
+        ArrayList<String> stringList = new ArrayList<>();
+        for (Object object: jsonArray) {
+            stringList.add((object.toString()));
+        }
+        return stringList;
+    }
 
 }

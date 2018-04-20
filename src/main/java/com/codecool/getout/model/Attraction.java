@@ -1,10 +1,16 @@
 package com.codecool.getout.model;
 
 
+
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "attractions")
 public class Attraction {
 
     @Id
@@ -12,6 +18,7 @@ public class Attraction {
     private Long ID;
     private String name;
     private String description;
+    @JsonManagedReference
     @ManyToMany
     private List<Category> categories;
     private String location;

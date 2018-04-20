@@ -1,16 +1,24 @@
 package com.codecool.getout.model;
 
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
+@Table(name = "categories")
 public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
+    @Column(unique = true)
     private String name;
-    @ManyToMany
+    @JsonBackReference
+    @ManyToMany(mappedBy = "categories")
     private List<Attraction> attractions;
 
     public Category(String name, List<Attraction> attractions) {
@@ -23,6 +31,7 @@ public class Category {
 
     public Category(String name) {
         this.name = name;
+        this.attractions = new ArrayList<>();
     }
 
     public Long getID() {
@@ -45,7 +54,6 @@ public class Category {
         this.attractions = attractions;
     }
 
-    public void addAttraction(Attraction attraction) {
-        this.attractions.add(attraction);
-    }
+
+
 }

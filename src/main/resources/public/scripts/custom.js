@@ -52,8 +52,10 @@ function myMap() {
     $.get( "/api/attractions", function( data ) {
         let parsedData = $.parseJSON(data);
         for (var i=0; i<5; i++) {
+            console.log(parsedData);
             let name = parsedData[i].name;
-            let id = parsedData[i].ID;
+            let id = parsedData[i].id;
+            console.log(id);
             geocoder.geocode({
                 "address": parsedData[i].location
             }, function(results) {
@@ -63,7 +65,8 @@ function myMap() {
                     position: myLatlng,
                     title: name
                 });
-                google.maps.event.addListener(marker, 'click', function (e) {
+                google.maps.event.addListener(marker, 'click', function () {
+                    console.log(id);
                     clickonAttraction.call(this, id)
                 });
                 marker.setMap(map);
@@ -78,6 +81,7 @@ function myMap() {
 
 
 function clickonAttraction(id) {
+    console.log(id);
     let geocoder = new google.maps.Geocoder();
     $.get("/api/attraction/" + id, function (data) {
         let parsedData = $.parseJSON(data);
@@ -85,7 +89,8 @@ function clickonAttraction(id) {
         $("#attractionInfo").show();
         $("#title").text(parsedData.name);
         $("#description").text(parsedData.description);
-        $("#categories").text($.each(parsedData.categories.name));
+        //Array.isArray(parsedData.categories) && array.length?$("#description").text($.each(c.name)):
+        //$("#categories").text(parsedData.categories[0].name);
         geocoder.geocode({
             "address": parsedData.location
         }, function (results) {
