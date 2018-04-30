@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -29,9 +30,13 @@ public class AttractionsAPI {
 
 
 
-    @GetMapping("/api/attractions")
-    public String getAllAttractions() throws JsonProcessingException {
-        return new ObjectMapper().writeValueAsString(attractionService.findAll());
+    @GetMapping("/api/attractions/{limit}")
+    public String getAllAttractions(@PathVariable Integer limit) throws JsonProcessingException {
+        List <Attraction> attractions = attractionService.findAll();
+        if (limit + 5 < attractions.size()) {
+            return new ObjectMapper().writeValueAsString(attractions.subList(limit, limit+5));
+        }
+        return "";
     }
 
 

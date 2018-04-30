@@ -20,4 +20,7 @@ public class AttractionService {
     public Attraction findOne(Long id) {
         return attractionRepository.findOne(id);
     }
+
+
+
 }

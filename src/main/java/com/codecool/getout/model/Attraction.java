@@ -4,6 +4,7 @@ package com.codecool.getout.model;
 
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import org.springframework.data.jpa.repository.Query;
 
 import javax.persistence.*;
 import java.util.ArrayList;

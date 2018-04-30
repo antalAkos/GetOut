@@ -16,6 +16,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <script src="scripts/jquery.backtotop.js"></script>
     <script src="scripts/jquery.mobilemenu.js"></script>
     <script src="scripts/jquery.flexslider-min.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="scripts/custom.js"></script>
 </head>
 <body id="top">
@@ -26,7 +27,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <header id="header" class="clear">
         <!-- ################################################################################################ -->
         <div id="logo" class="fl_left">
-            <h1><a href="index.html">GetOut</a></h1>
+            <h1><a href="/">GetOut</a></h1>
         </div>
         <!-- ################################################################################################ -->
         <nav id="mainav" class="fl_right">
@@ -159,13 +160,13 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper row2">
     <div class="latest">
         <!-- ################################################################################################ -->
-        <ul class="nospace group" >
+        <ul class="nospace group attractionGroup" >
 
-            <li th:each="attraction:${attractions}">
-                <figure><a class="overlay" href="#"><img id="attraction" th:src="${attraction.getPictures()[0]}" alt=""/></a>
+            <li class="attractionFigure"  style="position: relative">
+                <figure><img id="attraction"  alt=""/>
                     <figcaption class="inspace-30 center">
-                        <p class="bold uppercase" th:text="${attraction.getName()}">Ante lectus laoreet</p>
-                        <p class="attractionLink" th:id="${attraction.getID()}" >View Here &raquo;</p>
+                        <p class="bold uppercase " id="attractionName" >Ante lectus laoreet</p>
+                        <p class="attractionLink" >View Here &raquo;</p>
                     </figcaption>
                 </figure>
             </li>
@@ -189,6 +190,7 @@ Licence URI: http://www.os-templates.com/template-terms
                         <article class="service largeicon"><i class="icon nobg circle fa fa-ra"></i>
                             <h6 class="heading" id="categories"><a href="#">Vestibulum nibh enim</a></h6>
                             <p id="description">Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet.</p>
+                            <button type="submit" value="submit" class="button"></button>
                         </article>
                     </li>
 
@@ -200,7 +202,7 @@ Licence URI: http://www.os-templates.com/template-terms
             </div>
         <div id="googleMap" style="width:100%;height:400px;"></div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=myMap"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=map.myMap"></script>
 
 
 

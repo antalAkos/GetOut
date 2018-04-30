@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4f2875-0f0f-45cc-b4c8-78cd0eda60c3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/scripts/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/styles/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/scripts/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/scripts/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/styles/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/styles/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,42 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/CategoryRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttractionsAPI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AttractionsAPI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
+            <state relative-caret-position="282">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,10 +43,33 @@
       <file leaf-file-name="Attraction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttractionRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttractionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +78,8 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -88,45 +87,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="138" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="162">
+              <caret line="192" column="78" selection-start-line="192" selection-start-column="78" selection-end-line="192" selection-end-column="78" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#main#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#main#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popDB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+            <state relative-caret-position="-409">
+              <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="e#256#263#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONCreator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/JSONCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -141,6 +119,7 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -154,6 +133,10 @@
       <find>custom</find>
       <find>group</find>
       <find>raw</find>
+      <find>latest</find>
+      <find>overlay</find>
+      <find>console</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -174,21 +157,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/Server.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/styles/layout.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/attractionform.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/controller/RenderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/services/CategoryService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/JSONCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/scripts/custom.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/styles/fonts/custom.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/styles/layout.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/scripts/maps.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/scripts/custom.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/scripts/map.js" />
       </list>
     </option>
   </component>
@@ -218,6 +204,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -327,34 +314,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="getout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="getout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop_new/javase-codecool-shop-javatars" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wswp-4th-tw-proman-2andhalfmonthsofhell" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/codecool/getout" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/public" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/models" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public/styles" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/codecool/getout" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -460,7 +457,12 @@
       <workItem from="1524128668358" duration="7644000" />
       <workItem from="1524152200762" duration="8734000" />
       <workItem from="1524174889019" duration="1472000" />
-      <workItem from="1524199927403" duration="7547000" />
+      <workItem from="1524199927403" duration="11775000" />
+      <workItem from="1524929870054" duration="8851000" />
+      <workItem from="1524989953745" duration="4350000" />
+      <workItem from="1524998059697" duration="6896000" />
+      <workItem from="1525064608568" duration="12120000" />
+      <workItem from="1525080850219" duration="15402000" />
     </task>
     <task id="LOCAL-00001" summary="basic structure created">
       <created>1522918956136</created>
@@ -511,11 +513,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524208206979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="popDB working with namedquery">
+      <created>1524215432597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524215432597</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95282000" />
+    <option name="totallyTimeSpent" value="147129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-14" width="1385" height="915" extended-state="6" />
@@ -542,8 +551,8 @@
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948717" />
-      <window_info anchor="bottom" id="Problems" order="9" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494577" />
+      <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -571,7 +580,8 @@
     <MESSAGE value="attractions are displayed on map" />
     <MESSAGE value="single attractions are displayed" />
     <MESSAGE value="query result to json stackoverflow error ficet with jackson annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="query result to json stackoverflow error ficet with jackson annotations" />
+    <MESSAGE value="popDB working with namedquery" />
+    <option name="LAST_COMMIT_MESSAGE" value="popDB working with namedquery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -579,55 +589,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
+        <state relative-caret-position="1935">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3165">
-          <caret line="211" column="36" selection-start-line="211" selection-start-column="36" selection-end-line="211" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="121" selection-start-line="15" selection-start-column="121" selection-end-line="15" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="e#256#263#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -833,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/attractionform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -861,51 +822,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/services/CategoryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/controller/RenderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55905">
           <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
-          <folding>
-            <element signature="e#177013#177014#0" expanded="true" />
-            <element signature="e#177054#177055#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2265">
-          <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -919,44 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#main#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#main#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Column.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -964,23 +847,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="840">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/controller/RenderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.8.RELEASE/spring-data-jpa-1.11.8.RELEASE.jar!/org/springframework/data/jpa/repository/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/NamedQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -991,10 +895,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/popDB.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+        <state relative-caret-position="163">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/jquery.backtotop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/repository/AttractionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/model/Attraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="88" column="27" lean-forward="true" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/services/AttractionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="192" column="78" selection-start-line="192" selection-start-column="78" selection-end-line="192" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/scripts/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="e#256#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecool/getout/API/AttractionsAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
