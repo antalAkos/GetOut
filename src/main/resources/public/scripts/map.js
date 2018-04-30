@@ -13,7 +13,7 @@ map = {
         let myGMap=new google.maps.Map(document.getElementById("googleMap"), mapProp);
         $.get( "/api/attractions/" + this.limit, function( data ) {
             let parsedData = $.parseJSON(data);
-            if (parsedData = "") {
+            if (parsedData == "") {
                 map.removeArrowFromLastFigure();
             }
             let markers = [];
