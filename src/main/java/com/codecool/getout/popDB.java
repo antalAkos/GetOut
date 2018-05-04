@@ -12,10 +12,7 @@ import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -36,9 +33,9 @@ public class popDB {
         attractionRepository.save(attraction1);
         attractionRepository.save(attraction2);*/
 
-        List<String> pictureList = new ArrayList<String>();
+        Set<String> pictureList = new HashSet<String>();
         pictureList.add("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350");
-        pictureList.add("http://diarioveaonline.com/wp-content/uploads/2018/01/best-nature-hd-wallpapers-for-desktop-21-1024x576.jpg");
+        pictureList.add("http://opmfinancial.com/picture-of-giraffes/");
         JSONParser parser = new JSONParser();
         try
         {

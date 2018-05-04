@@ -59,7 +59,7 @@ displayTags: function (array, id) {
 clickonAttraction: function (id) {
         $("#categories").empty();
         let geocoder = new google.maps.Geocoder();
-        $.get("/api/attraction/" + id, function (data) {
+    $.get("/api/attraction/" + id, function (data) {
             let parsedData = $.parseJSON(data);
             $("#attractionInfo").show();
             $("#title").text(parsedData.name);

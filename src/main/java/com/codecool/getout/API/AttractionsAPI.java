@@ -2,6 +2,7 @@ package com.codecool.getout.API;
 
 import com.codecool.getout.model.Attraction;
 import com.codecool.getout.services.AttractionService;
+import com.codecool.getout.services.SearchService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
@@ -23,6 +24,8 @@ public class AttractionsAPI {
 
     @Autowired
     AttractionService attractionService;
+    @Autowired
+    SearchService searchService;
 
     public AttractionsAPI(AttractionService attractionService) {
         this.attractionService = attractionService;
@@ -42,4 +45,9 @@ public class AttractionsAPI {
 
     @GetMapping("/api/attraction/{id}")
     public String getOneAttraction(@PathVariable Long id) throws JsonProcessingException {return new ObjectMapper().writeValueAsString(attractionService.findOne(id));}
+
+    @GetMapping("api/search/{keyword}")
+    public String search(@PathVariable String keyword) throws JsonProcessingException {
+        return new ObjectMapper().writeValueAsString(searchService.fuzzySearch(keyword.replace("+", " ")));
+    }
 }

@@ -2,12 +2,17 @@ package com.codecool.getout.model;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import org.hibernate.search.annotations.ContainedIn;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+@Indexed
 @Entity
 @Table(name = "categories")
 @NamedQueries({
@@ -20,10 +25,14 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
+
+    @Field
     @Column(unique = true)
     private String name;
+    
     @JsonBackReference
-    @ManyToMany(mappedBy = "categories")
+    @ManyToMany(mappedBy = "categories", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @IndexedEmbedded(depth = 1)
     private List<Attraction> attractions;
 
     public Category(String name, List<Attraction> attractions) {

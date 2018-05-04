@@ -9,7 +9,6 @@ import java.sql.SQLException;
 
 public class JSONCreator {
 
-    @SuppressWarnings("unchecked")      //we use 3rd-party non-type-safe types...
     public  String convertResultSetToJson(ResultSet resultSet) throws SQLException
     {
         JSONArray json = new JSONArray();

@@ -1,5 +1,9 @@
 $( document ).ready(function() {
     $("#attractionInfo").hide();
+    search.search();
+    routeplanner.placesToPlanRoute = [];
+    routeplanner.addToRoute();
+    routeplanner.createRoute();
 });
 
 /*

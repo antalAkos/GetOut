@@ -19,12 +19,15 @@ Licence URI: http://www.os-templates.com/template-terms
     <script src="scripts/jquery.mobilemenu.js"></script>
     <script src="scripts/jquery.flexslider-min.js"></script>
     <script src="scripts/map.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/routeplanner.js"></script>
     <script src="scripts/custom.js"></script>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
 <div class="wrapper row1">
     <header id="header" class="clear">
         <!-- ################################################################################################ -->
@@ -44,9 +47,9 @@ Licence URI: http://www.os-templates.com/template-terms
                         <li><a href="pages/basic-grid.html">Basic Grid</a></li>
                     </ul>
                 </li>
-                <li><a class="drop" href="#">Dropdown</a>
+                <li><a class="drop" href="#">Menu</a>
                     <ul>
-                        <li><a href="#">Level 2</a></li>
+                        <li><a id="createRoute">Create route for my added places</a></li>
                         <li><a class="drop" href="#">Level 2 + Drop</a>
                             <ul>
                                 <li><a href="#">Level 3</a></li>
@@ -55,11 +58,27 @@ Licence URI: http://www.os-templates.com/template-terms
                         </li>
                     </ul>
                 </li>
-                <li><input class="btmspace-15" type="text" value="" placeholder="Search for attractions"/></li>
+                <li><input class="btmspace-15" id="search" type="text" value="" placeholder="Search for attractions"/></li>
             </ul>
         </nav>
         <!-- ################################################################################################ -->
     </header>
+</div>
+
+<div class="container" style="display: none">
+
+    <hgroup class="mb20">
+        <h1>Search Results</h1>
+        <h2 class="lead"><strong id="resultNr" class="text-danger">3</strong> results were found for the search for <strong class="text-danger" id="searchText">Lorem</strong></h2>
+    </hgroup>
+    <div id="results"></div>
+
+    <div style="padding: 20px">
+        <button id="prevSearch" style="float: left" disabled="disabled">Previous</button>
+
+        <button id="nextSearch" style="float: right" disabled="disabled">Next</button>
+
+    </div>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -110,40 +129,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <!-- ################################################################################################ -->
     </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!--<div class="wrapper row2">
-    <div id="services" class="clear">
-        <div class="group">
-            <div class="one_third first">
-                <article class="service"><i class="icon red circle fa fa-bell-o"></i>
-                    <h2 class="heading">Phasellus accumsan velit lacus</h2>
-                    <p class="btmspace-10">Ut vitae mi turpis donec convallis turpis bibendum dolor hendrerit eget ultrices.</p>
-                    <p><a href="#">Read More &raquo;</a></p>
-                </article>
-            </div>
-            <div class="one_third">
-                <article class="service"><i class="icon orange circle fa fa-bicycle"></i>
-                    <h2 class="heading">Duis in dictum erat phasellus cursus</h2>
-                    <p class="btmspace-10">Ut augue ante euismod vitae scelerisque non tincidunt ut velit integer et iaculis.</p>
-                    <p><a href="#">Read More &raquo;</a></p>
-                </article>
-            </div>
-            <div class="one_third">
-                <article class="service"><i class="icon green circle fa fa-mortar-board"></i>
-                    <h2 class="heading">Vivamus accumsan mollis mi in ultricies</h2>
-                    <p class="btmspace-10">Nullam commodo orci ut justo bibendum tristique proin vel est at risus volutpat.</p>
-                    <p><a href="#">Read More &raquo;</a></p>
-                </article>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>-->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <div class="wrapper row6">
     <section id="cta" class="clear">
         <!-- ################################################################################################ -->
@@ -191,7 +177,7 @@ Licence URI: http://www.os-templates.com/template-terms
                         <article class="service largeicon"><i class="icon nobg circle fa fa-ra"></i>
                             <h6 class="heading" id="categories"><a href="#">Vestibulum nibh enim</a></h6>
                             <p id="description">Aenean semper elementum tellus, ut placerat leo. Quisque vehicula, urna sit amet.</p>
-                            <button type="submit" value="submit" class="button">Add to my route</button>
+                            <button type="submit" value="submit" class="addToMyRoute button" >Add to my route</button>
                         </article>
                     </li>
                 </ul>
