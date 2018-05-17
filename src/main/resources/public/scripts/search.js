@@ -11,6 +11,7 @@ search = {
                     $(".latest").hide();
                     $(".row3").hide();
                     $(".container").show(function() {
+                        $("#googleMap").hide();
                         $("#resultNr").text(parsedData.length);
                         $("#searchText").text(searchText);
                         search.displaySearchresults(searchResultsPerPage, parsedData);
@@ -40,7 +41,7 @@ search = {
                         "            <div class=\"col-xs-12 col-sm-12 col-md-7 excerpet\">\n" +
                         "                <h3><a href=\"#\" title=\"\">"+ parsedData[i].name +"</a></h3>\n" +
                         "                <p>"+ parsedData[i].description +"</p>\n" +
-                        "                <span class=\"plus\"><a class='addToMyRoute' title=\"Lorem ipsum\" id=" + parsedData[i].id + "><i class=\"glyphicon glyphicon-plus\"></i></a></span>\n" +
+                        "                <i id='" + parsedData[i].id + "' class='glyphicon glyphicon-plus addToMyRoute'></i>\n" +
                         "            </div>\n" +
                         "            <span class=\"clearfix borda\"></span>\n" +
                         "        </article>\n" +
@@ -48,6 +49,7 @@ search = {
                 }
 
             }
+            routeplanner.addToRoute();
             if (perPage < parsedData.length) {
                 if (perPage > 10) {
                     console.log("time to see previous button");

@@ -31,10 +31,10 @@ map = {
                         title: name
                     });
                     markers.push(marker);
+                    marker.setMap(myGMap);
                     google.maps.event.addListener(marker, 'click', function () {
                         map.clickonAttraction.call(this, id)
                     });
-                    marker.setMap(myGMap);
                     map.setBounds(markers, myGMap);
 
 

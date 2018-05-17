@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<!--
-Template Name: Colossus
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
+
 <html  lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>GetOut</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"  id="bootstrap-css"/>
 
-    <link href="styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="styles/layout.css" rel="stylesheet" type="text/css"  media="all"/>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.backtotop.js"></script>
     <script src="scripts/jquery.mobilemenu.js"></script>
@@ -38,6 +32,10 @@ Licence URI: http://www.os-templates.com/template-terms
         <nav id="mainav" class="fl_right">
             <ul class="clear">
                 <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Register</a></li>
+                <li class="active"><a href="index.html">Login</a></li>
+                <li><input class="btmspace-15" type="text"  placeholder="Username"/></li>
+                <li><input class="btmspace-15" type="text"  placeholder="Password"/></li>
                 <li><a class="drop" href="#">Pages</a>
                     <ul>
                         <li><a href="pages/gallery.html">Gallery</a></li>
@@ -49,7 +47,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 </li>
                 <li><a class="drop" href="#">Menu</a>
                     <ul>
-                        <li><a id="createRoute">Create route for my added places</a></li>
+                        <li><a id="createRoute">Create route</a></li>
                         <li><a class="drop" href="#">Level 2 + Drop</a>
                             <ul>
                                 <li><a href="#">Level 3</a></li>
@@ -188,7 +186,7 @@ Licence URI: http://www.os-templates.com/template-terms
             </div>
         <div id="googleMap" style="width:100%;height:400px;"></div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=map.myMap"></script>
+        <script id="script" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRebc8NWRCr540yhh_Sn5ucUyG4x7ib64&amp;callback=map.myMap"></script>
 
 
 

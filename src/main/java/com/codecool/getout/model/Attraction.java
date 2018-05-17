@@ -46,6 +46,10 @@ public class Attraction {
     @Field
     private String location;
 
+    @Field
+    private String coordinates;
+
+
     @CollectionTable(name = "pictures")
     @ElementCollection(fetch = FetchType.EAGER)
     @Field
@@ -63,6 +67,15 @@ public class Attraction {
         this.location = location;
         this.pictures = pictures;
     }
+
+    public String getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(String coordinates) {
+        this.coordinates = coordinates;
+    }
+
 
     public Long getID() {
         return ID;
