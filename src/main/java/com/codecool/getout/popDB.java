@@ -33,9 +33,8 @@ public class popDB {
         attractionRepository.save(attraction1);
         attractionRepository.save(attraction2);*/
 
-        Set<String> pictureList = new HashSet<String>();
-        pictureList.add("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350");
-        pictureList.add("http://opmfinancial.com/picture-of-giraffes/");
+        Set<String> pictureList;
+        //pictureList.add("http://opmfinancial.com/picture-of-giraffes/");
         JSONParser parser = new JSONParser();
         try
         {
@@ -47,6 +46,13 @@ public class popDB {
 
             for (Object obj:jsonArray){
                 JSONObject jsonObject = (JSONObject) obj;
+                if (jsonObject.containsKey("pictures")) {
+                    pictureList = new HashSet<>(jsonToArray((JSONArray)jsonObject.get("pictures")));
+                } else {
+                    pictureList = new HashSet<>();
+                    pictureList.add("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350");
+
+                }
                 JSONArray tagsArray = (JSONArray) jsonObject.get("tags");
                 ArrayList<String> categoryStrings = jsonToArray(tagsArray);
                 List<Category> categories = new ArrayList<>();

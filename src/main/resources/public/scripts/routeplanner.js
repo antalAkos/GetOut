@@ -37,12 +37,14 @@ routeplanner= {
         let directionsService = new google.maps.DirectionsService;
         let directionsDisplay = new google.maps.DirectionsRenderer;
         var prepare = routeplanner.prepareForRoute(directionsService, directionsDisplay);
-        console.log(prepare);
         $.when(prepare).done( function (prepare) {
             console.log("prepare:  " + prepare);
+                let destination = prepare.pop();
+                console.log(destination);
+                //prepare.splice(-1, 1);
                 directionsService.route({
-                    origin: "Budapest",
-                    destination: "Eger",//routPoints[-1],
+                    origin: "Budapest 1 kerulet",
+                    destination: "Budapest 5 kerulet",//routPoints[-1],
                     waypoints: prepare,//routPoints.slice(0, -1),
                     optimizeWaypoints: true,
                     travelMode: 'DRIVING'

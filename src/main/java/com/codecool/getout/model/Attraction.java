@@ -33,9 +33,11 @@ public class Attraction {
     private Long ID;
 
     @Field
+    @Analyzer(definition = "customanalyzer")
     private String name;
 
     @Field
+    @Analyzer(definition = "customanalyzer")
     private String description;
 
     @JsonManagedReference
@@ -44,9 +46,11 @@ public class Attraction {
     private List<Category> categories;
 
     @Field
+    @Analyzer(definition = "customanalyzer")
     private String location;
 
     @Field
+    @Spatial
     private String coordinates;
 
 

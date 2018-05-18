@@ -4,6 +4,10 @@ map = {
     incrementLimit: function() {
         this.limit += 5;
     },
+    
+    decrementLimit: function() {
+        this.limit -= 5;
+    },
 
     myMap: function () {
         let geocoder = new google.maps.Geocoder();
@@ -63,8 +67,10 @@ clickonAttraction: function (id) {
             let parsedData = $.parseJSON(data);
             $("#attractionInfo").show();
             $("#title").text(parsedData.name);
+            $("#location").text(parsedData.location);
             $("#description").text(parsedData.description);
-            $(".button").attr("id", parsedData.id)
+            $(".button").attr("id", parsedData.id);
+            $("#picture").attr("src", parsedData.pictures[0]);
             map.displayTags(parsedData.categories, id);
             //Array.isArray(parsedData.categories) && array.length?$("#description").text($.each(c.name)):
             //$("#categories").text(parsedData.categories[0].name);
@@ -121,6 +127,14 @@ removeArrowFromLastFigure: function(){
         });
     },
 
+    previousPage: function() {
+        $("#previous").click(function () {
+            $("#attractionInfo").hide();
+            map.decrementLimit();
+            map.myMap();
+        });
+    },
+
     setBounds: function (markers, myGMap) {
         var bounds = new google.maps.LatLngBounds();
         for (var i = 0; i < markers.length; i++) {
@@ -146,6 +160,7 @@ removeArrowFromLastFigure: function(){
         map.viewAttraction();
         map.addArrowToLastFigure();
         map.nextPage();
+        map.previousPage();
     }
 
 };

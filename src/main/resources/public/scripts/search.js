@@ -6,10 +6,7 @@ search = {
                 let searchText = $("#search").val();
                 $.get("/api/search/" + searchText.replace(" ", "+"), function (data) {
                     let parsedData = $.parseJSON(data);
-                    $("#slider").hide();
-                    $("#cta").hide();
-                    $(".latest").hide();
-                    $(".row3").hide();
+                    search.hideForSearch();
                     $(".container").show(function() {
                         $("#googleMap").hide();
                         $("#resultNr").text(parsedData.length);
@@ -40,6 +37,7 @@ search = {
                         "            </div>\n" +
                         "            <div class=\"col-xs-12 col-sm-12 col-md-7 excerpet\">\n" +
                         "                <h3><a href=\"#\" title=\"\">"+ parsedData[i].name +"</a></h3>\n" +
+                        "                <h6>"+parsedData[i].location +"</h6>\n" +
                         "                <p>"+ parsedData[i].description +"</p>\n" +
                         "                <i id='" + parsedData[i].id + "' class='glyphicon glyphicon-plus addToMyRoute'></i>\n" +
                         "            </div>\n" +
@@ -50,6 +48,7 @@ search = {
 
             }
             routeplanner.addToRoute();
+            $("#searchButtons").show();
             if (perPage < parsedData.length) {
                 if (perPage > 10) {
                     console.log("time to see previous button");
@@ -84,6 +83,13 @@ search = {
         } else {
             return perPage - 10;
         }
+    },
+
+    hideForSearch: function () {
+        $("#slider").hide();
+        $("#cta").hide();
+        $(".latest").hide();
+        $(".row3").hide();
     }
 
 

@@ -33,6 +33,7 @@ public class AttractionsAPI {
 
 
 
+
     @GetMapping("/api/attractions/{limit}")
     public String getAllAttractions(@PathVariable Integer limit) throws JsonProcessingException {
         List <Attraction> attractions = attractionService.findAll();

@@ -4,6 +4,7 @@ $( document ).ready(function() {
     routeplanner.placesToPlanRoute = [];
     routeplanner.addToRoute();
     routeplanner.createRoute();
+    advancedsearch.advancedSearch();
 });
 
 /*

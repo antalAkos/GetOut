@@ -158,6 +158,11 @@
             <version>5.9.0.Final</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-elasticsearch</artifactId>
+            <version>5.9.0.Final</version>
+        </dependency>
 
     </dependencies>
 
