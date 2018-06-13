@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <body>
 
-<div class="container">
-<div class="row">
+<div th:fragment="login">
+<div class="modal fade"  id="loginModal" >
+<div class="row modal-dialog">
     <div class="span12">
-        <div class="" id="loginModal">
+        <div class="modal-content" >
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h3>Have an Account?</h3>
@@ -16,6 +17,7 @@
                         <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
                         <li><a href="#create" data-toggle="tab">Create Account</a></li>
                     </ul>
+                    <br/>
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane active in" id="login">
                             <div class="form-horizontal" >
@@ -25,7 +27,7 @@
                                     </div>
                                     <div class="control-group">
                                         <!-- Username -->
-                                        <label class="control-label"  for="username">Username</label>
+                                        <label>Username</label>
                                         <div class="controls">
                                             <input type="text" id="username" name="username" placeholder="" class="input-xlarge"/>
                                         </div>
@@ -33,7 +35,7 @@
 
                                     <div class="control-group">
                                         <!-- Password-->
-                                        <label class="control-label" for="password">Password</label>
+                                        <label >Password</label>
                                         <div class="controls">
                                             <input type="password" id="password" name="password" placeholder="" class="input-xlarge"/>
                                         </div>
@@ -42,24 +44,30 @@
 
                                     <div class="control-group">
                                         <!-- Button -->
-                                        <div class="controls">
+                                        <div class="controls"><br/>
                                             <button class="btn btn-success" id="loginButton">Login</button>
                                         </div>
                                     </div>
                                 </fieldset>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="create">
-                            <div id="tab">
-                                <label>Username</label>
-                                <input type="text" value="" class="input-xlarge"/>
-                                <label>First Name</label>
+                            </div>
+                        <div class="tab-pane fade " id="create">
+                            <div id="tab" class="register">
+                                <div class="control-group">
+                                    <label id="username-label">Username</label>
+                                    <input type="text" name="username" class="input-xlarge"/>
+                                </div>
+
+                                <label>Email</label>
+                                <input type="text" name="email" class="input-xlarge"/>
                                 <label>Password</label>
-                                <input type="text" value="" class="input-xlarge"/>
+                                <input type="password" name="password" class="input-xlarge"/>
                                 <label>Confirm password</label>
-                                <input type="text" value="" class="input-xlarge"/>
+                                <input type="password" name="passwordConfirm" class="input-xlarge"/>
+
 
                                 <div>
+                                    <br/>
                                     <button class="btn btn-primary" id="registerButton">Create Account</button>
                                 </div>
                             </div>
@@ -69,6 +77,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
     </body>

@@ -44,7 +44,7 @@ routeplanner= {
                 //prepare.splice(-1, 1);
                 directionsService.route({
                     origin: "Budapest 1 kerulet",
-                    destination: "Budapest 5 kerulet",//routPoints[-1],
+                    destination: prepare[-1],//routPoints[-1],
                     waypoints: prepare,//routPoints.slice(0, -1),
                     optimizeWaypoints: true,
                     travelMode: 'DRIVING'

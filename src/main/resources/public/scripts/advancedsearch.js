@@ -12,7 +12,7 @@ advancedsearch = {
             $(".mb20").hide();
             $("#searchButtons").hide();
             $("#search-block").css('display', 'block');
-            advancedsearch.advancedSearchResults();
+            advancedsearch.advancedSearchResults.call(this);
         })
     },
 
@@ -30,7 +30,9 @@ advancedsearch = {
                 $("#googleMap").hide();
                 $("#resultNr").text(advancedsearch.placesInRange.length);
                 $("#searchText").text(advancedsearch.searchText);
+                console.log("this should be 2")
                 search.displaySearchresults.call(this, 10, advancedsearch.placesInRange);
+
             })
 
 
@@ -64,9 +66,11 @@ advancedsearch = {
                                 }
                             }
                         });
+                    console.log("this should be the very first");
                 }
 
 
             })
+        console.log("this should be the 1");
         }
     }

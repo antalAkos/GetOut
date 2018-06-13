@@ -10,8 +10,29 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
+    private String email;
     private String password;
+    @Transient
     private String passwordConfirm;
+
+    public User() {
+    }
+
+    public User(String username, String email) {
+        this.username = username;
+        this.email = email;
+    }
+
+    public User(String username, String email, String password, String passwordConfirm) {
+        this.password = password;
+        this.username = username;
+        this.email = email;
+        this.passwordConfirm = passwordConfirm;
+    }
+
+    public User(String username) {
+        this.username = username;
+    }
 
 
     public Long getId() {
@@ -30,6 +51,14 @@ public class User {
         this.username = username;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -38,7 +67,6 @@ public class User {
         this.password = password;
     }
 
-    @Transient
     public String getPasswordConfirm() {
         return passwordConfirm;
     }

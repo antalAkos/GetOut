@@ -1,6 +1,8 @@
 $( document ).ready(function() {
     $("#attractionInfo").hide();
     search.search();
+    authentication.login();
+    authentication.register();
     routeplanner.placesToPlanRoute = [];
     routeplanner.addToRoute();
     routeplanner.createRoute();

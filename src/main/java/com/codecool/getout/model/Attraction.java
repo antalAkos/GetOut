@@ -50,7 +50,6 @@ public class Attraction {
     private String location;
 
     @Field
-    @Spatial
     private String coordinates;
 
 
